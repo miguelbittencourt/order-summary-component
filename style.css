@@ -1,0 +1,45 @@
+:root{
+    /* ### Primary */
+
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--very-pale-blue: hsl(225, 100%, 98%);
+--desatured-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    background: url("./images/pattern-background-desktop.svg") repeat-x;
+    font-family: "Red Hat Display", sans-serif;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.main-section{
+    width: 300px;
+    position: relative;
+    margin: 4rem auto;
+}
+
+.card-content{
+    background-color: var(--very-pale-blue);
+    position: relative;
+    top: -4px;
+}
+
+footer{
+    margin: 2rem auto;
+    font-family: "Red Hat Display", sans-serif;
+}
