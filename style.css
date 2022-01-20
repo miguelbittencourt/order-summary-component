@@ -24,7 +24,7 @@ body{
     box-sizing: border-box;
 }
 
-img{
+.main-section .card-picture img{
     width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
@@ -42,6 +42,7 @@ img{
     position: relative;
     top: -4px;
     padding: 0 2.2rem;
+    /* background-color: green; */
 }
 
 #title-paragraph{
@@ -56,7 +57,7 @@ img{
     margin: 0 0 1rem;
 }
 
-#title-paragraph p{
+.paragraph{
     color: var(--desatured-blue);
     font-size: 13px;
     line-height: 1.2rem;
@@ -67,11 +68,21 @@ button{
     border-radius: 0.5rem;
     border: none;
     background-color: var(--bright-blue);
-    color: var(--very-pale-blue);
     padding: 0.7rem;
     font-size: 12px;
     font-family: "Red Hat Display";
     box-shadow: 0 10px 15px hsl(209, 55%, 84%);
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: hsl(245, 55%, 52%);
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: var(--very-pale-blue);
 }
 
 
@@ -85,19 +96,60 @@ button{
     font-weight: 700;
 }
 
-#cancel-div{
-    margin: 1.5rem 0 1rem;
+#cancel-div a{
+    text-decoration: none;
+    color: var(--desatured-blue);
+}
+
+#cancel-div a:hover{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+
+#change-div a{
+    text-decoration: underline;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+#change-div a:hover{
+    text-decoration: none;
+    color: hsl(245, 55%, 52%);
+}
+
+#price-div, #change-div{
+    display: inline-block;
+}
+
+#price-div{
+    width: 70%;
+}
+
+#price-change{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: hsl(207, 39%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#price-change img{
+    float: left;
+    margin: 0 1rem 0 0;
 }
 
 footer{
     margin: 2rem auto;
     font-family: "Red Hat Display", sans-serif;
+    font-weight: 900;
 }
 
-@media(max-width:768px)
+@media(max-width:460px)
 {
     .main-section{
-        width: 320px;
+        width: 325px;
         margin: 2rem auto;
     }
 }
