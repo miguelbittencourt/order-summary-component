@@ -18,8 +18,9 @@
 
 body{
     font-size: 16px;
-    background: url("./images/pattern-background-desktop.svg") repeat-x;
-    background-size: cover;
+    background: url("./images/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: top;
     font-family: "Red Hat Display", sans-serif;
     box-sizing: border-box;
 }
@@ -73,6 +74,7 @@ button{
     font-family: "Red Hat Display";
     box-shadow: 0 10px 15px hsl(209, 55%, 84%);
     text-decoration: none;
+    color: var(--very-pale-blue);
 }
 
 button:hover{
@@ -80,10 +82,6 @@ button:hover{
     cursor: pointer;
 }
 
-button a{
-    text-decoration: none;
-    color: var(--very-pale-blue);
-}
 
 
 #payment-div, #cancel-div{
