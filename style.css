@@ -93,3 +93,11 @@ footer{
     margin: 2rem auto;
     font-family: "Red Hat Display", sans-serif;
 }
+
+@media(max-width:768px)
+{
+    .main-section{
+        width: 320px;
+        margin: 2rem auto;
+    }
+}
