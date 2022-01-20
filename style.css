@@ -19,24 +19,74 @@
 body{
     font-size: 16px;
     background: url("./images/pattern-background-desktop.svg") repeat-x;
+    background-size: cover;
     font-family: "Red Hat Display", sans-serif;
     box-sizing: border-box;
 }
 
 img{
     width: 100%;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .main-section{
-    width: 300px;
+    width: 350px;
     position: relative;
     margin: 4rem auto;
+    border-radius: 1rem;
+    padding: 0 0 1rem 0;
+    background-color: var(--very-pale-blue);
 }
 
 .card-content{
-    background-color: var(--very-pale-blue);
     position: relative;
     top: -4px;
+    padding: 0 2.2rem;
+}
+
+#title-paragraph{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#title-paragraph h1{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 1rem;
+}
+
+#title-paragraph p{
+    color: var(--desatured-blue);
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+
+button{
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    padding: 0.7rem;
+    font-size: 12px;
+    font-family: "Red Hat Display";
+    box-shadow: 0 10px 15px hsl(209, 55%, 84%);
+}
+
+
+#payment-div, #cancel-div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+    font-size: 12px;
+    color: var(--desatured-blue);
+    font-weight: 700;
+}
+
+#cancel-div{
+    margin: 1.5rem 0 1rem;
 }
 
 footer{
